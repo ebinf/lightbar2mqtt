@@ -73,3 +73,17 @@ constexpr SerialWithName REMOTES[] = {
 // later on. But if you want to have a specific name from the beginning or make it easier to identify the device,
 // you can set it here.
 #define HOME_ASSISTANT_DEVICE_NAME "Mi Computer Monitor Light Bar"
+
+/* -- Time ---------------------------------------------------------------------------------------------------- */
+// Syncs the system time with an NTP server. This helps some diplay the ESP32 in the clients list of some routers,
+// such as TP-Link Deco.
+
+// This is the NTP server
+#define NTP_SERVER "pool.ntp.org"
+
+// Your local timezone offset in seconds.
+// eg UTC+10 - 10 * 60 * 60
+#define GMT_OFFSET_SEC 0
+
+// The Daylight offset (in seconds). Set it to 3600 if your country observes Daylight saving time; otherwise, set it to 0.
+#define DST_OFFSET_SEC 0
